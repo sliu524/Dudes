@@ -1,13 +1,13 @@
 public class Dude{
   
   private float x, y, vx, vy;
-  private float size = 20;
+  private float size = 100;
   
-  public Dude(float x, float y, float vx, float vy) {
+  public Dude(float x, float y) {
     this.x = x;
     this.y = y;
-    this.vx = vx;
-    this.vy = vy;
+    this.vx = (float)Math.random()*10+1;
+    this.vy = (float)Math.random()*10+1;
     
   }
   
@@ -24,7 +24,7 @@ public class Dude{
     return v;
   }
   
-  
+ 
   public void show(){
     fill(255, 165, 0);
     circle(x, y, size);

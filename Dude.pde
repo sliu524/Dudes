@@ -18,7 +18,7 @@ public class Dude{
     y += vy;
   }
   private float velocity(float cod, float v){
-    if ((cod >= 800)||(cod <= 0)){
+    if ((cod >= 800 - size/2)||(cod <= 0 + size/2)){
       v *= -1;
     }
     return v;
